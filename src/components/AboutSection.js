@@ -1,6 +1,6 @@
 import React from 'react';
 import Home1 from '../img/home1.png';
-function AboutSection() {
+const AboutSection = () => {
     return (
         <div>
             <div className="description">
