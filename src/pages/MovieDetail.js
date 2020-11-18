@@ -5,6 +5,8 @@ import { MovieState } from '../movieState';
 //animation
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import ScrollTop from '../components/ScrollTop';
+
 
 
 
@@ -21,7 +23,7 @@ const MovieDetail = () => {
 
     }, [movies, url]);
     return (
-        <>
+        <><ScrollTop />
             {movie && (
                 <Details variants={pageAnimation} initial='hidden' animate="show" exit='exit'>
                     <HeadLine>
